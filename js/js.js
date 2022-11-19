@@ -20,7 +20,7 @@ setTimeout(() => {
 
 let l = 0;
 let i = 0;
-let txt = ["Administrado de sistemas informáticos.", "Apasionado por la ciberseguridad."];
+let txt = ["No se que poner texto 1.", "No se que poner texto 2 xdd."];
 
 
 function typeWriter() {
