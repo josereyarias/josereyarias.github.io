@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #2b2d2f;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    overflow: hidden
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 2rem;
+    margin: 0.67em;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.nombre {
+    color: #ff073a;
+    text-shadow: .25rem .25rem .25rem #ff073a
+}
+
+.main {
+    height: 100vh;
+    text-align: center
+}
+
+.title {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 40%
+}
+
+.type span {
+    height: 50%;
+    border-right: #666 0.08em solid;
+    animation: blinking 0.75s linear infinite;
+}
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+#preloader {
+    background: #2b2d2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999
+}
+
+#preloader .load {
+    height: 6rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 6rem
+}
+
+#preloader .load hr {
+    animation: a 2s ease infinite;
+    border: 0;
+    height: 40%;
+    margin: 0;
+    position: absolute;
+    width: 40%
+}
+
+#preloader .load :nth-child(1) {
+    animation-delay: -1.5s;
+    background: #fff
+}
+
+#preloader .load :nth-child(2) {
+    animation-delay: -1s;
+    background: #ff073a
+}
+
+#preloader .load :nth-child(3) {
+    animation-delay: -.5s;
+    background: #fff
+}
+
+#preloader .load :nth-child(4) {
+    background: #ff073a
+}
+
+@keyframes a {
+    0% {
+        transform: translate(0)
+    }
+    25% {
+        transform: translate(160%)
+    }
+    50% {
+        transform: translate(160%, 160%)
+    }
+    75% {
+        transform: translateY(160%)
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-right: #2b2d2f 0.08em solid;
+    }
+}
+
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+.landing-icons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.landing-icons a {
+    text-decoration: none;
+}
+
+.landing-icons .social-link {
+    color: #fff;
+    position: relative;
+    height: 4rem;
+    line-height: 3rem;
+    margin: .25rem;
+    width: 4rem
+}
+
+.landing-icons .social-link .circle {
+    animation: c 1s ease-in-out forwards;
+    fill: none;
+    stroke-dasharray: 40;
+    transition: all .2s ease-in-out
+}
+
+.landing-icons .social-link .social {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    transition: all .5s ease-in-out;
+    width: 100%
+}
+
+.landing-icons .social-link .social-svg {
+    fill: #fff
+}
+
+.landing-icons .social-link .label {
+    display: none
+}
+
+.landing-icons .social-link:hover {
+    cursor: pointer
+}
+
+.landing-icons .social-link:hover .circle {
+    animation: b 1s ease-in-out forwards, d 1s linear forwards;
+    fill: #fff;
+    fill-opacity: 1
+}
+
+.landing-icons .social-link:hover .social-svg {
+    fill: #000
+}
+
+.landing-icons .social-link:hover .label {
+    display: unset!important;
+    position: relative;
+    top: -2rem
+}
+
+.landing-icons .email:hover .circle {
+    animation: b 1s ease-in-out forwards, e 1s linear forwards
+}
+
+.landing-icons .email:hover .social-svg {
+    fill: #d44638
+}
+
+.landing-icons .linkedin:hover .circle {
+    animation: b 1s ease-in-out forwards, f 1s linear forwards
+}
+
+.landing-icons .linkedin:hover .social-svg {
+    fill: #007bb6
+}
+
+.landing-icons .twitter:hover .circle {
+    animation: b 1s ease-in-out forwards, g 1s linear forwards
+}
+
+.landing-icons .twitter:hover .social-svg {
+    fill: #1da1f2
+}
+
+@keyframes b {
+    to {
+        stroke-dasharray: 510;
+        stroke-width: .5rem
+    }
+}
+
+@keyframes c {
+    0% {
+        stroke: #fff;
+        stroke-dasharray: 510;
+        stroke-width: .5rem
+    }
+    to {
+        stroke: #fff;
+        stroke-dasharray: 83;
+        stroke-width: .5rem
+    }
+}
+
+@keyframes d {
+    to {
+        stroke: #000
+    }
+}
+
+@keyframes e {
+    to {
+        stroke: #b23121
+    }
+}
+
+@keyframes f {
+    to {
+        stroke: #007bb6
+    }
+}
+
+@keyframes g {
+    to {
+        stroke: #1da1f2
+    }
+}
