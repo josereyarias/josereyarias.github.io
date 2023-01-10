@@ -20,7 +20,7 @@ setTimeout(() => {
 
 let l = 0;
 let i = 0;
-let txt = ["Administración de Sistemas Informáticos en Red.", "Apasionado por la Ciberseguridad"];
+let txt = ["Administración de Sistemas Informáticos en Red.", "Apasionado por la Ciberseguridad."];
 
 
 function typeWriter() {
